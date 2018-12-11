@@ -1,3 +1,5 @@
+import { FormsModule } from '@angular/forms';
+import { FlexLayoutModule } from '@angular/flex-layout';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -27,6 +29,8 @@ import { AppRoutingModule } from './app-routing.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    FlexLayoutModule,
+    FormsModule,
     BrowserAnimationsModule,
     MaterialModule,
   ],

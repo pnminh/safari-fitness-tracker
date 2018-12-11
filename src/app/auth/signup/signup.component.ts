@@ -1,3 +1,4 @@
+import { NgForm } from '@angular/forms';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -6,10 +7,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./signup.component.css']
 })
 export class SignupComponent implements OnInit {
+  constructor() {}
 
-  constructor() { }
-
-  ngOnInit() {
+  ngOnInit() {}
+  submit(form: NgForm) {
+    console.log(form);
   }
-
 }
